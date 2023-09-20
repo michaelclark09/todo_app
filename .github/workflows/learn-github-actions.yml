@@ -14,7 +14,7 @@ jobs:
   run-unit-tests:
     runs-on: ubuntu-latest
     steps:
-        - uses: src/webapp/api
+        - uses: /Users/qamichael/Documents/GitHub/todo_app/src/webapp
         - run: ls
         - run: npm run test
         
