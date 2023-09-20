@@ -11,8 +11,9 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
-jobs:
-    run-unit-tests:
+  run-unit-tests:
+    runs-on: ubuntu-latest
+    steps:
         - uses: src/webapp/api
         - run: npm run test
         
