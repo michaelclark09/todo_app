@@ -13,10 +13,11 @@ jobs:
       - run: bats -v
   run-unit-tests:
     runs-on: ubuntu-latest
+    env: 
+        working-directory: .src/webapp/api 
     steps:
         - uses: actions/checkout@v4
         - uses: actions/setup-node@v3
           with:
             node-version: '14'
-        - run: cd ${{ github.actor }}main/src/webapp@master && npm ci && npm run test
-        
+        - run: ls -R
