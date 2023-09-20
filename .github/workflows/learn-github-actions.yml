@@ -15,5 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - uses: src/webapp/api
+        - run: ls
         - run: npm run test
         
