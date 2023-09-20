@@ -17,8 +17,6 @@ jobs:
         - uses: actions/checkout@v4
         - uses: actions/setup-node@v3
           with:
-            node-version: '18'
-        - run: cd main/src/webapp@master
-        - run: ls
-        - run: npm run test
+            node-version: '14'
+        - run: cd ${{ github.actor }}main/src/webapp@master && npm ci && npm run test
         
