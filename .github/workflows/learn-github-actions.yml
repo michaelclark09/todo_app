@@ -14,8 +14,6 @@ jobs:
   run-unit-tests:
     runs-on: ubuntu-latest
     steps:
-        - uses: michaelclark09/todo_app/tree/main/src/webapp
         - run: ls
-        - run: echo "about to npm"
         - run: npm run test
         
